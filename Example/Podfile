@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'LGCommonUIModule_Example' do
+  pod 'LGCommonUIModule', :path => '../'
+
+  target 'LGCommonUIModule_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
