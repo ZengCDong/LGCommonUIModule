@@ -1,0 +1,53 @@
+{
+  "name": "LGCommonUIModule",
+  "version": "0.1.0",
+  "summary": "LGCommonUIModule.",
+  "description": "LGCommonUIModule is Common UI Components",
+  "homepage": "https://github.com/ZengCDong/LGCommonUIModule",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ZengCDong": "983217036@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/ZengCDong/LGCommonUIModule.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "LGCommonUIModule/Classes/**/*",
+  "dependencies": {
+    "AFNetworking": [
+
+    ],
+    "Masonry": [
+
+    ],
+    "LGMacroAndCategoryModule": [
+
+    ]
+  },
+  "prefix_header_contents": [
+    "#import \"Masonry.h\"",
+    "#import \"UIKit+AFNetworking.h\"",
+    "#import \"LGMacros.h\""
+  ],
+  "subspecs": [
+    {
+      "name": "LGToast",
+      "source_files": "LGCommonUIModule/Classes/LGToast"
+    },
+    {
+      "name": "LGShare",
+      "dependencies": {
+        "LGCommonUIModule/LGToast": [
+
+        ]
+      },
+      "source_files": "LGCommonUIModule/Classes/LGShare"
+    }
+  ]
+}

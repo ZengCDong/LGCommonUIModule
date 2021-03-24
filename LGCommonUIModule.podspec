@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'LGCommonUIModule'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of LGCommonUIModule.'
+  s.summary          = 'LGCommonUIModule.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,18 +17,16 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.description      = 'LGCommonUIModule is Common UI Components'
 
-  s.homepage         = 'https://github.com/983217036@qq.com/LGCommonUIModule'
+  s.homepage         = 'https://github.com/ZengCDong/LGCommonUIModule'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '983217036@qq.com' => '983217036@qq.com' }
-  s.source           = { :git => 'https://github.com/983217036@qq.com/LGCommonUIModule.git', :tag => s.version.to_s }
+  s.author           = { 'ZengCDong' => '983217036@qq.com' }
+  s.source           = { :git => 'https://github.com/ZengCDong/LGCommonUIModule.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '8.0'
 
   s.source_files = 'LGCommonUIModule/Classes/**/*'
   
@@ -38,5 +36,22 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  
+  s.dependency 'AFNetworking'
+#  s.dependency 'SDWebImage'
+  s.dependency 'Masonry'
+  s.dependency 'LGMacroAndCategoryModule'
+  
+  s.prefix_header_contents = '#import "Masonry.h"','#import "UIKit+AFNetworking.h"','#import "LGMacros.h"'
+  
+  s.subspec 'LGToast' do |ss|
+      ss.source_files = 'LGCommonUIModule/Classes/LGToast'
+    end
+
+   s.subspec 'LGShare' do |ss|
+     ss.dependency 'LGCommonUIModule/LGToast'
+     ss.source_files = 'LGCommonUIModule/Classes/LGShare'
+   end
+   
+
 end
