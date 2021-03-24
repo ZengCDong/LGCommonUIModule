@@ -14,18 +14,18 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
-  - LGCommonUIModule (0.1.0):
+  - LGCommonUIModule (1.0.0):
     - AFNetworking
-    - LGCommonUIModule/LGShare (= 0.1.0)
-    - LGCommonUIModule/LGToast (= 0.1.0)
+    - LGCommonUIModule/LGShare (= 1.0.0)
+    - LGCommonUIModule/LGToast (= 1.0.0)
     - LGMacroAndCategoryModule
     - Masonry
-  - LGCommonUIModule/LGShare (0.1.0):
+  - LGCommonUIModule/LGShare (1.0.0):
     - AFNetworking
     - LGCommonUIModule/LGToast
     - LGMacroAndCategoryModule
     - Masonry
-  - LGCommonUIModule/LGToast (0.1.0):
+  - LGCommonUIModule/LGToast (1.0.0):
     - AFNetworking
     - LGMacroAndCategoryModule
     - Masonry
@@ -49,7 +49,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
-  LGCommonUIModule: cea5411cef5397261b9564f95614a5c90d5db630
+  LGCommonUIModule: 2c61baa28b845efec0879358cb4247456a756f62
   LGMacroAndCategoryModule: 5f7e2cc2f4110950039c69acba36a01cc808d630
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
 
